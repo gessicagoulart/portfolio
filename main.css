@@ -15,6 +15,9 @@ body{
     background: url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
 }
+section{
+    padding: 6rem;
+}
 a{
     text-decoration: none;
     color: #eee;
@@ -35,7 +38,6 @@ img{
     height: 100%;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 10rem;
 }
 .section-heading{
     text-align: center;
@@ -73,6 +75,9 @@ img{
 .section-heading h6{
     font-size: 1.6rem;
     font-weight: 300;
+}
+.has-margin-right{
+    margin-right: 5rem;
 }
 /*End reusable*/
 
@@ -222,8 +227,8 @@ li{
 .fa-linkedin:hover{
     color: #4267b2;
 }
-.fa-twitter-square:hover{
-    color: #38a1f3;
+.fa-github:hover{
+    color: #12171b;
 }
 .fa-gitlab:hover{
     color: #ec5c19;
@@ -279,7 +284,117 @@ li{
     margin-bottom: 0;
 }
 .profile-img{
+    width: 50rem;
     flex: 1;
+}
+.portfolio-description{
+}
+.portfolio-description h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 1rem 0;
+}
+.portfolio-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.3;
+}
+.portfolio-description .cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+    transition: color 950ms;
+}
+.portfolio-description .cta:hover{
+    color: #2f67cd;
 }
 
 /*End portfolio*/
+/*Start timeline*/
+.timeline ul{
+    border-left: 4px solid #ffe838;
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%;
+}
+.timeline h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: .3;
+}
+.timeline .date{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.timeline .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .date::before,
+.timeline .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.timeline .date::before{
+    content: attr(data-date);
+    left: -21rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.5rem;
+}
+.timeline .date::after{
+    content: '';
+    box-shadow: 0 0 0 4px #fd57bf;
+    border-radius: 100%;
+    left: -8rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #313131;
+}
+/*End timeline*/
+
+/*Start contact*/
+.contact{
+    background-color: #221e3f;
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+form label{
+    font-size: 1.5rem;
+}
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: #fd57bf;
+}
+input[type="submit"]{
+    width: initial;
+    background-color: #fd57bf;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+/*End contact*/
