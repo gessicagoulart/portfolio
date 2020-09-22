@@ -6,6 +6,7 @@
     <title>Gessica Goulart</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Permanent+Marker&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -33,7 +34,7 @@
                     <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li>
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contacts</a>
                 </li>
             </ul>
         </nav>
@@ -45,23 +46,19 @@
 
     <section class="about" id="about">
         <div class="container">
-            <div class="profile-img">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
                 <img src="images/gess.jpeg" alt="">
             </div>
-            <div class="about-details">
+            <div class="about-details"  data-aos="fade-left" data-aos-delay="600">
                 <div class="about-heading">
                     <h1>About</h1>
                     <h6>Myself</h6>
                 </div>
-                <p>My Text kafdkjksdjaidfjaosidfjsadfiasdfio
-                    çlkajdffldsjfsldfjasfafl
-                    aslkdfjaçlsdfjksafkjasdflkasdfç
-                    çlakjdasdjfalçsdfkaçdflakf
-                    oh yeas
-                    laskjdflsjfaçsl
-                    good
-                    asidfjsdfjasdfoafjssa
+                <p>A country-side brazilian who claims to be a futsal player and have decided to take a deep dive into the 'Hello World'.</p>
+                <p>
+                    From restaurants in London to tech support back home it was only when I moved to Portugal that I realized programming was my dream job.
                 </p>
+                <p>And as a strong women I do not stop untill I get it!</p>
                 <div class="social-media">
                     <ul class="nav-list">
                         <li>
@@ -92,7 +89,7 @@
                 <h6>Can I help?</h6>
             </div>
             <div class="my-skills">
-                <div class="skill">
+                <div class="skill"  data-aos="fade-in" data-aos-delay="300">
                     <div class="icon-container">
                         <i class="fas fa-layer-group"></i>
                     </div>
@@ -101,7 +98,7 @@
                         asojfoasjdfasfdsaof
                     </p>
                 </div>
-                <div class="skill">
+                <div class="skill"  data-aos="fade-in" data-aos-delay="500">
                     <div class="icon-container">
                         <i class="fas fa-feather"></i>
                     </div>
@@ -110,7 +107,7 @@
                         asojfoasjdfasfdsaof
                     </p>
                 </div>
-                <div class="skill">
+                <div class="skill"  data-aos="fade-in" data-aos-delay="700">
                     <div class="icon-container">
                         <i class="fas fa-chart-area"></i>
                     </div>
@@ -129,10 +126,10 @@
                 <h6>Some of my recent work</h6>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right">
+                <div class="portfolio-img has-margin-right"  data-aos="fade-right" data-aos-delay="300">
                     <img src="images/gessi.png" alt="">
                 </div>
-                <div class="portfolio-description">
+                <div class="portfolio-description"  data-aos="fade-left" data-aos-delay="600">
                     <h6>Developer</h6>
                     <h1>Blog something</h1>
                     <p>Some paragharph aspfdokjjasodfasi
@@ -142,7 +139,7 @@
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-description">
+                <div class="portfolio-description"  data-aos="fade-right" data-aos-delay="300">
                     <h6>Design</h6>
                     <h1>Layout</h1>
                     <p>Some paragharph aspfdokjjasodfasi
@@ -150,16 +147,16 @@
                     </p>    
                     <a href="#" class="cta">View Details</a>
                 </div>
-                <div class="portfolio-description has-margin-right">
+                <div class="portfolio-description"  data-aos="fade-left" data-aos-delay="600">
                     <img src="images/gessi.png" alt="">
                 </div>
             </div>
             
             <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right">
+                <div class="portfolio-img has-margin-right"  data-aos="fade-right" data-aos-delay="600">
                     <img src="images/udc.png" alt="">
                 </div>
-                <div class="portfolio-description">
+                <div class="portfolio-description"  data-aos="fade-left" data-aos-delay="900">
                     <h6>Design</h6>
                     <h1>Sketch</h1>
                     <p>Some paragharph aspfdokjjasodfasi
@@ -177,7 +174,7 @@
                 <h1>Work Experience</h1>
                 <h6>Past jobs</h6>
             </div>
-    <div class="timeline">
+    <div class="timeline"  data-aos="fade-down" data-aos-delay="800">
         <ul>
             <li class="date" data-date="2019 - 2020">
                 <h1>Cash Express</h1>
@@ -204,37 +201,39 @@
 <section class="contact" id="contact">
     <div class="container">
         <div class="section-heading">
-            <h1>Contact</h1>
+            <h1>Contacts</h1>
             <h6>Let's work together</h6>
         </div>
-        <form action="">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <label for="service">Services: </label>
-            <select name="service" id="service">
-                <option value="">Design</option>
-                <option value="">Development</option>
-                <option value="">Other</option>
-            </select>
-                <label for="subject">Subject:</label>
-                <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
-                <input type="submit" value="Submit">
-        </form>
+        <ul class="contacts"   data-aos="fade-up" data-aos-delay="500">
+            <div class="trying">
+                          <li>
+                <i class="fas fa-phone-square" class="icon-link"></i>
+                    +44 7825 708947
+                </li>  
+                                <li>
+                    <i class="fas fa-envelope-square"></i>
+                    <a href="mailto:gessica_mariana12@hotmail.com" class="icon-link">
+                        gessica_mariana12@hotmail.com
+                </a>
+            </li>    
+                              <li>
+                <i class="fab fa-linkedin" class="icon-link"></i>
+               <a href="https://www.linkedin.com/in/gessica-goulart/" target="_blank">linkedin.com/in/gessica-goulart</a> 
+                </li>  
+            </div>
+        </ul>
     </div>
 </section>
 <footer class="copyright">
     <div class="up" id="up">
         <i class="fas fa-chevron-up"></i>
-        <p>&copy; 2020 Gessica Goulart</p>
     </div>
+    <p>&copy; 2020 Gessica Goulart</p>
 </footer>
             
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
 </body>
-
 
 </html>
