@@ -414,10 +414,10 @@ li{
         background-size: cover;
     }
     .main-header h1{
-        font-size: 15rem;
+        font-size: 3vw;
     }
     .main-header h6{
-        font-size: 1.7rem;
+        font-size: 1vw;
     }
     .nav-list{
         flex-direction: column;
@@ -459,34 +459,56 @@ li{
 
 }
 @media screen and (max-width: 600px){
-    .main-header h1{
-        font-size: 8rem;
+    .main-header{
+        width: fit-content;
+        padding: 13%;
     }
-    .main-header h2{
-        font-size: 1.4rem;
+    .main-header h1{
+        font-size: 3.5rem;
+        justify-content: space-evenly;    
+        width: fit-content;
     }
     .nav-bar{
         font-size: 1rem;
+        width: fit-content;
     }
+
     .about .container{
         flex-direction: column;
+        width: fit-content;
+    }
+    .section-heading{
+        -width: fit-content;
     }
     .my-skills{
-        display: inline-flex;
+        display: grid;
+        width: fit-content;
     }
+
     .profile-img{
-        margin: 0 0 7rem 0;
-        order: 1;
+        width: fit-content;
+        order: 0;
+        margin-left: 4.5rem;
+        margin-bottom: 3rem;
     }
     .projects-item{
         flex-direction: column;
     }
     .projects-img{
-        margin: 0 0 2rem 0;
+        width: fit-content;
+        margin: 0;
     }
     .projects-description{
         margin: 0;
+        width: fit-content;
         order: -1;
+    }
+    .container{
+        width: fit-content;
+    }
+
+    .timeline ul{
+        width: fit-content;
     }
     .timeline p{
         font-size: 1.6rem;
@@ -495,7 +517,13 @@ li{
         font-size: 1.4rem;
     }
     .up{
-        right: 2rem;
+        -right: 12rem;
+    }
+    .contacts{
+        width: fit-content;
+    }
+    .copyright{
+        width: 100%;
     }
 
 }
