@@ -16,7 +16,7 @@ body{
     background-size: cover;
 }
 section{
-    padding: 6rem 0;
+    padding: 8rem 0;
 }
 a{
     text-decoration: none;
@@ -39,10 +39,11 @@ img{
     height: 100%;
     margin: 0 auto;
     position: relative;
+    z-index: -1;
 }
 .section-heading{
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 .section-heading h1{
     font-size: 3.5rem;
@@ -80,24 +81,7 @@ img{
 .has-margin-right{
     margin-right: 5rem;
 }
-/*End reusable*/
 
-/*Start header*/
-header{
-    width: 100%;
-    height: 100vh;
-}
-.top-nav{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: -100vh;
-    z-index: 50;
-    background-color: #16162d;
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    transition: all 650ms cubic-bezier(1,0,0,1);
-}
 .nav-list{
     list-style: none;
     width: 100%;
@@ -106,90 +90,84 @@ header{
     justify-content: center;
     align-items: center;
 }
+
 li{
     margin: 0 2rem;
 }
-.nav-link{
-    font-family: 'Amatic SC', cursive;
-    font-size: 5rem;
-    padding: 1rem;
-}
-.nav-link:hover,
-.nav-link:focus{
-    background: linear-gradient(to top, #ffe838, #fd57bf);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.top-nav.open{
-    top: 0;
-    border-radius: initial;
-}
-.menu-toggler{
-    position: absolute;
-    top: 5rem;
-    right: 5rem;
-    width: 5rem;
-    height: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/*End reusable*/
+/*Star second option header*/
+.main-header h1, h2 {
+    position: relative;
+    margin: 0;
+    font-size: 2.5rem;
+    border-bottom: solid transparent;
+  }
+  .main-header h1{
+      border-bottom: solid rgb(205, 230, 66);
+      margin-bottom: 0;
+  }
+
+  .nav-bar{
+    background-color: #16162d;
+    border: 2px solid 16162d;
+    border-radius: 2px;
     cursor: pointer;
-    z-index: 1500;
-    transition: transform 650ms ease-out;
+    transition: all 0.6s ease;
+  }
+
+  .nav-bar:hover{
+    background-color: #16162d;
+  } 
+
+.nav-bar h2:hover{
+    border-bottom: solid rgb(205, 230, 66);
+    border-radius: 2;
 }
 
-.menu-toggler.open{
-    transform: rotate(-45deg);
-}
-.bar{
-    background: linear-gradient(to right, #ffe838, #fd57bf);
-    width: 100%;
-    height: 4px;
-    border-radius: .8rem;
-}
 
-.bar.half{
-    width: 50%;
-}
-.bar.start{
-    transform-origin: right;
-    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-}
-.open .bar.start{
-    transform: rotate(-450deg) translateX(.8rem);
-}
-.bar.end{
-    align-self: flex-end;
-    transform-origin: left;
-    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-}
-.open .bar.end{
-    transform: rotate(-450deg) translateX(-.8rem);
-}
-.landing-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-}
-.landing-text h1{
-    font-size: 16rem;
-    font-family: 'Magra', cursive;
-    background: linear-gradient(to top,#ffe838, #fd57bf);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 1rem;
+.main-header h1 {
+    padding: 0.5vw 0;
+    font-size: 5vw;
+    color: #eee;
+/*     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     user-select: none;
-}
-.landing-text h6{
-    font-size: 2rem;
-    font-weight: 300;
-}
-/*End header*/
+  }
 
+  .main-header {
+    display: flex;
+    justify-content: center;
+    background: #16162d;
+    position: relative;
+    font-family: 'Magra', cursive;
+    top: 0;
+   }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #282861;
+    transition: background .5s;
+    padding: 2rem 0;
+
+  }
+  .nav-1 {
+    transition: margin-right .5s ease;
+  }
+  
+  .fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #16162d;
+  }
+  
+  .toleft {
+    margin-right: 50%;
+  }
+
+/*Finish second header option*/
 
 /*Start about*/
 .about .container{
@@ -265,11 +243,14 @@ li{
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
 }
+.skill p{
+    padding-top: 1rem;
+}
 .icon-container{
     width: 10rem;
     height: 10rem;
     border: 3px solid #ffe838;
-    background-color: #fd57bf;
+    background-color: #16162d;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
@@ -368,12 +349,12 @@ li{
 }
 .timeline .date::after{
     content: '';
-    box-shadow: 0 0 0 4px #fd57bf;
+    box-shadow: 0 0 0 4px #EEE;
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: #313131;
+    background-color: #16162d;
 }
 /*End timeline*/
 
@@ -381,6 +362,7 @@ li{
 .contact{
     background-color: #221e3f;
     text-align: left;
+    
 }
 .contacts{
     list-style: none;
@@ -389,14 +371,8 @@ li{
     margin: 0 auto;
     position: relative;
     text-align: left;
-    width: 70%;
-    transform: translateX(5vw)
+    width: 60%;
 }
-.trying i{
-    padding: 1rem;
-
-}
-
 /*End contact*/
 /*Start footer*/
 .copyright{
@@ -432,7 +408,7 @@ li{
 /*Start animations*/
 @keyframes pulse{
     0%{
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+        box-shadow: 0 0 0 0 #ffe838;
     }
     70%{
         box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
@@ -451,10 +427,10 @@ li{
         background: url("images/sitebg.jpg") no-repeat center fixed;
         background-size: cover;
     }
-    .landing-text h1{
+    .main-header h1{
         font-size: 15rem;
     }
-    .landing-text h6{
+    .main-header h6{
         font-size: 1.7rem;
     }
     .nav-list{
@@ -463,8 +439,8 @@ li{
     li{
         margin: 2rem 0;
     }
-    .nav-link{
-        font-size: 4.5rem;
+    .nav-bar{
+        font-size: 1.5rem;
     }
     .about-heading h1{
         font-size: 8rem;
@@ -501,14 +477,14 @@ li{
         top: 2rem;
         right: 2rem;
     }
-    .landing-text h1{
+    .main-header h1{
         font-size: 8rem;
     }
-    .landing-text h6{
+    .main-header h2{
         font-size: 1.4rem;
     }
-    .nav-link{
-        font-size: 3.5rem;
+    .nav-bar{
+        font-size: 1rem;
     }
     .about .container{
         flex-direction: column;
