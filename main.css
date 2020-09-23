@@ -27,6 +27,7 @@ p{
     font-weight: 300;
 }
 img{
+    border-radius: 6px;
     width: 100%;
 }
 /*End global*/ 
@@ -176,7 +177,7 @@ li{
 }
 .landing-text h1{
     font-size: 16rem;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Magra', cursive;
     background: linear-gradient(to top,#ffe838, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -224,29 +225,34 @@ li{
     font-size: 5rem;
     transition: color 650ms;
 }
+
 .fa-linkedin:hover{
-    color: #4267b2;
+    color: #12171b;
+    transition: color 650ms
 }
 .fa-github:hover{
     color: #12171b;
 }
 .fa-gitlab:hover{
-    color: #ec5c19;
+    color: #12171b;
 }
 .fa-envelope-square:hover{
-    color: #fd57bf;
+    color:#12171b;
     transition: color 650ms;
+}
+.fa-phone-square:hover{
+    color: #12171b;
+    transition: color 650ms
 }
 /*End about*/
 
 /*Start services*/
 .my-skills{
     margin-top: 10rem;
-    display: inline-flex;
-    grid-template-columns: repeat(auto-fit, minmax(25re, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2.5rem;
     text-align: center;
-    transform: translateX(8.5vw)
 }
 .skill{
     display: flex;
