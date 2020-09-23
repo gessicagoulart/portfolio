@@ -38,10 +38,10 @@ img{
 
 /*Start reusable*/
 .container{
-    width: 90%;
+    width: 100%;
     max-width: 120rem;
     height: 100%;
-    margin: 0 auto;
+    margin: 3rem;
     position: relative;
 }
 .section-heading{
@@ -213,7 +213,7 @@ li{
 }
 /*End about*/
 
-/*Start services*/
+/*Start skills*/
 .my-skills{
     margin-top: 10rem;
     display: grid;
@@ -250,34 +250,34 @@ li{
     margin: auto;
     transform: rotate(-45deg);
 }
-/*End services*/
+/*End skills*/
 
-/*Start portfolio*/
-.portfolio-item{
+/*Start projects*/
+.projects-item{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
 }
-.portfolio-item:last-child{
+.projects-item:last-child{
     margin-bottom: 0;
 }
 .profile-img{
     width: 50rem;
     flex: 1;
 }
-.portfolio-description h1{
+.projects-description h1{
     font-size: 3rem;
     font-weight: 300;
     margin-top: 1rem 0;
 }
-.portfolio-description h6{
+.projects-description h6{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
     opacity: 0.3;
 }
-.portfolio-description .cta{
+.projects-description .cta{
     display: inline-block;
     margin-top: 2.5rem;
     font-size: 1.5rem;
@@ -285,10 +285,10 @@ li{
     color: #3883ff;
     transition: color 950ms;
 }
-.portfolio-description .cta:hover{
+.projects-description .cta:hover{
     color: #2f67cd;
 }
-/*End portfolio*/
+/*End projects*/
 
 /*Start timeline*/
 .timeline ul{
@@ -349,13 +349,14 @@ li{
 .contact{
     background-color: #221e3f;
     text-align: left;
+    margin-bottom: 3rem;
 }
 .contacts{
     list-style: none;
     display: block;
     font-size: 2rem;
     margin: 0 auto;
-    position: relative;
+    -position: fixed;
     text-align: left;
     width: 60%;
 }
@@ -388,7 +389,7 @@ li{
     margin: auto;
 }
 .copyright p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 /*End footer*/
 
@@ -477,13 +478,13 @@ li{
         margin: 0 0 7rem 0;
         order: 1;
     }
-    .portfolio-item{
+    .projects-item{
         flex-direction: column;
     }
-    .portfolio-img{
+    .projects-img{
         margin: 0 0 2rem 0;
     }
-    .portfolio-description{
+    .projects-description{
         margin: 0;
         order: -1;
     }
@@ -498,4 +499,3 @@ li{
     }
 
 }
-
