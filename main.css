@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 html{
     font-size: 12px;
@@ -16,7 +15,7 @@ body{
     background-size: cover;
 }
 section{
-    padding: 8rem 0;
+    padding: 5rem 0;
 }
 a{
     text-decoration: none;
@@ -27,8 +26,13 @@ p{
     font-weight: 300;
 }
 img{
-    border-radius: 6px;
+    border-radius: 4px;
+    border-style: groove;
     width: 100%;
+}
+.content{
+    z-index: -1;
+    position: absolute;
 }
 /*End global*/ 
 
@@ -39,7 +43,6 @@ img{
     height: 100%;
     margin: 0 auto;
     position: relative;
-    z-index: -1;
 }
 .section-heading{
     text-align: center;
@@ -73,7 +76,6 @@ img{
     border-radius: 100%;
     bottom: -1rem;
 }
-
 .section-heading h6{
     font-size: 1.6rem;
     font-weight: 300;
@@ -81,7 +83,6 @@ img{
 .has-margin-right{
     margin-right: 5rem;
 }
-
 .nav-list{
     list-style: none;
     width: 100%;
@@ -90,7 +91,6 @@ img{
     justify-content: center;
     align-items: center;
 }
-
 li{
     margin: 0 2rem;
 }
@@ -99,41 +99,36 @@ li{
 .main-header h1, h2 {
     position: relative;
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-bottom: solid transparent;
   }
   .main-header h1{
       border-bottom: solid rgb(205, 230, 66);
       margin-bottom: 0;
   }
-
   .nav-bar{
     background-color: #16162d;
     border: 2px solid 16162d;
     border-radius: 2px;
     cursor: pointer;
-    transition: all 0.6s ease;
-  }
-
-  .nav-bar:hover{
+}
+.nav-bar:hover{
     background-color: #16162d;
-  } 
+    transition: all 1s ease;
+} 
 
 .nav-bar h2:hover{
     border-bottom: solid rgb(205, 230, 66);
     border-radius: 2;
+    transition: all 1s ease;
 }
-
 
 .main-header h1 {
     padding: 0.5vw 0;
     font-size: 5vw;
     color: #eee;
-/*     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
     user-select: none;
   }
-
   .main-header {
     display: flex;
     justify-content: center;
@@ -142,7 +137,6 @@ li{
     font-family: 'Magra', cursive;
     top: 0;
    }
-  
   .nav-bar {
     display: flex;
     justify-content: space-around;
@@ -150,23 +144,19 @@ li{
     background: #282861;
     transition: background .5s;
     padding: 2rem 0;
-
   }
   .nav-1 {
     transition: margin-right .5s ease;
   }
-  
   .fixed {
     position: fixed;
     width: 100%;
     top: 0;
     background: #16162d;
   }
-  
   .toleft {
     margin-right: 50%;
   }
-
 /*Finish second header option*/
 
 /*Start about*/
@@ -203,7 +193,6 @@ li{
     font-size: 5rem;
     transition: color 650ms;
 }
-
 .fa-linkedin:hover{
     color: #12171b;
     transition: color 650ms
@@ -255,7 +244,6 @@ li{
     display: flex;
     transform: rotate(45deg);
 }
-
 .icon-container i{
     color: #ffe838;
     font-size: 5rem;
@@ -300,7 +288,6 @@ li{
 .portfolio-description .cta:hover{
     color: #2f67cd;
 }
-
 /*End portfolio*/
 
 /*Start timeline*/
@@ -362,7 +349,6 @@ li{
 .contact{
     background-color: #221e3f;
     text-align: left;
-    
 }
 .contacts{
     list-style: none;
@@ -380,13 +366,14 @@ li{
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background-color: #16162d;
-    padding: 2rem 0;
-    position: relative;
+    padding: 0.5rem 0;
+    position: fixed;
+    bottom: 0;
 }
 .up{
     position: absolute;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background-color: #eee;
     top: -2.5rem;
     right: 5rem;
@@ -417,11 +404,9 @@ li{
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
     }
 }
-
 /*End animations*/
 
 /*Media queries*/
-
 @media screen and (max-width: 768px){
     body{
         background: url("images/sitebg.jpg") no-repeat center fixed;
@@ -473,10 +458,6 @@ li{
 
 }
 @media screen and (max-width: 600px){
-    .menu-toggler{
-        top: 2rem;
-        right: 2rem;
-    }
     .main-header h1{
         font-size: 8rem;
     }
@@ -488,6 +469,9 @@ li{
     }
     .about .container{
         flex-direction: column;
+    }
+    .my-skills{
+        display: inline-flex;
     }
     .profile-img{
         margin: 0 0 7rem 0;
@@ -501,7 +485,7 @@ li{
     }
     .portfolio-description{
         margin: 0;
-        order: 2;
+        order: -1;
     }
     .timeline p{
         font-size: 1.6rem;
