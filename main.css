@@ -407,8 +407,8 @@ li{
 /*End animations*/
 
 /*Media queries*/
-@media screen and (max-width: 800px){
-/*     section{
+/* @media screen and (max-width: 800px){
+ *//*     section{
         padding: 0.2rem 0;
     }
 
@@ -507,6 +507,11 @@ li{
     }
 } */
 @media screen and (max-width: 600px){
+    .content{
+        z-index: -1;
+        margin: 1rem;
+        position: relative;
+    }
     section{
         padding: 0.2rem 0;
         width: 100%;
@@ -545,7 +550,7 @@ li{
     .my-skills{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 6rem;
+        -grid-gap: 3rem;
         padding: 0;
         width: fit-content;
         margin: 0;
@@ -556,12 +561,15 @@ li{
         flex-direction: column;
         align-items: left;
         padding: 0.5rem;
+        width: fit-content;
     }
     .icon-container{
-        width: fit-content;
+        -width: fit-content;
     }
     .icon-container i{
         width: fit-content;
+        font-size: 3rem;
+        margin: 1.5rem;
     }
 /*     .my-skills{
         margin-top: 10rem;
@@ -604,17 +612,18 @@ li{
         order: -1;
     }
     .container{
-        width: fit-content;
+        -width: fit-content;
         margin: 0rem;
-        max-width: none;
-        position: inherit;
+        -max-width: none;
+        -position: inherit;
     }
     .timeline ul{
-        width: 35%;
+        width: 48%;
         text-align: left;
-        margin-left: 25%;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        padding-right: 0;
+        margin-right: 0;
     }
     .timeline p{
         font-size: 1.2rem;
@@ -628,8 +637,10 @@ li{
     .contacts{
         width: fit-content;
         font-size: 1.5rem;
+        margin-bottom: 2rem;
     }
     .copyright{
-        width: 100%;
+        width: inherit;
+        padding: 0; 
     }
 }
