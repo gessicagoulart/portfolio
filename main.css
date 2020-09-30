@@ -169,7 +169,7 @@ li{
     text-align: center;
     text-transform: uppercase;
     line-height: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 .about-heading h1{
     font-size: 10rem;
@@ -407,105 +407,121 @@ li{
 /*End animations*/
 
 /*Media queries*/
-/* @media screen and (max-width: 800px){
- *//*     section{
-        padding: 0.2rem 0;
-    }
+@media screen and (max-width: 800px){
+.content{
+    z-index: -1;
+    margin: 1rem;
+    position: relative;
+}
+section{
+    padding: 0.2rem 0;
+    width: 100%;
+}
 
-    .main-header h1{
-        font-size: 3.5rem;
-        justify-content: space-evenly;    
-        width: fit-content;
-    }
-    .nav-bar h2{
-        font-size: 1rem;
-        margin-right: 2%;
-    }
+.main-header h1{
+    font-size: 3.5rem;
+    justify-content: space-evenly;    
+    width: fit-content;
+}
+.nav-bar h2{
+    font-size: 1rem;
+    width: fit-content;
+    margin-right: 2%;
+}
 
-    .nav-bar:hover{
-        background-color: #16162d;
-        transition: none;
-    } 
-    
-    .nav-bar h2:hover{
-        border-bottom: solid rgb(205, 230, 66);
-        border-radius: 2;
-        transition: none;
-    }
+.nav-bar:hover{
+    background-color: #16162d;
+    transition: none;
+} 
 
-    .about .container{
-        flex-direction: column;
-        width: fit-content;
-    }
-    .my-skills{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 6rem;
-        margin-top: 5rem;
-    }
+.nav-bar h2:hover{
+    border-bottom: solid rgb(205, 230, 66);
+    border-radius: 2;
+    transition: none;
+}
+.about .container{
+    flex-direction: column;
+    width: 100%;
+}
+.about-heading{
+    margin-top: 5rem;
+}
+p{
+    font-size: 1.5rem;
+}
+.my-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    width: fit-content;
+    margin: 0;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0.5rem;
+    width: fit-content;
+    margin-left: 2.1rem;
+}
+.icon-container i{
+    width: fit-content;
+    font-size: 3rem;
+    margin: 1.5rem;
+}
+.skill h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    margin: 0.2rem 1% 0.2rem 0;
+}
+.skill p{
+    padding-top: 0.2rem;
+}
 
-    .skill{
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        padding: 0.5rem;
-    }
-    .skill h1{
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        display: flex;
-        margin: 0.2rem 1% 0.2rem 0;
-    }
-    .skill p{
-        padding-top: 0.2rem;
-    }
-
-    .profile-img{
-        width: fit-content;
-        order: 0;
-        margin-left: 4.5rem;
-        margin-bottom: 3rem;
-    }
-    .projects-item{
-        flex-direction: column;
-    }
-    .projects-img{
-        width: fit-content;
-        margin: 0;
-    }
-    .projects-description{
-        margin-bottom: 1rem;
-        width: fit-content;
-        order: -1;
-    }
-    .container{
-        width: fit-content;
-    }
-
-    .timeline ul{
-        width: 35%;
-        text-align: left;
-        margin-left: 25%;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-    .timeline p{
-        font-size: 1.2rem;
-    } 
-    .timeline .date::before{
-        font-size: 0.9rem;
-    }
-    .up{
-        -right: 12rem;
-    }
-    .contacts{
-        width: fit-content;
-        font-size: 1.5rem;
-    }
-    .copyright{
-        width: 100%;
-    }
-} */
+.profile-img{
+    width: 80%;
+    order: 0;
+    margin-right: 0;
+}
+.projects-item{
+    flex-direction: column;
+}
+.projects-img{
+    width: fit-content;
+    margin: 0;
+}
+.projects-description{
+    margin-bottom: 1rem;
+    width: fit-content;
+    order: -1;
+}
+.container{
+    margin: 0rem;
+}
+.timeline ul{
+    width: 48%;
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0;
+    margin-right: 0;
+}
+.timeline p{
+    font-size: 1.2rem;
+} 
+.timeline .date::before{
+    font-size: 0.9rem;
+}
+.contacts{
+    width: fit-content;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.copyright{
+    width: 100%;
+}
+}
 @media screen and (max-width: 600px){
     .content{
         z-index: -1;
@@ -525,6 +541,7 @@ li{
     .nav-bar h2{
         font-size: 1rem;
         width: fit-content;
+        margin-right: 2%;
     }
 
     .nav-bar:hover{
@@ -537,53 +554,36 @@ li{
         border-radius: 2;
         transition: none;
     }
-
     .about .container{
         flex-direction: column;
         width: 100%;
-        margin-top: 1rem;
+    }
+    .about-heading{
+        margin-top: 5rem;
     }
     p{
-        margin: 1.5rem;
         font-size: 1.5rem;
     }
     .my-skills{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        -grid-gap: 3rem;
         padding: 0;
         width: fit-content;
         margin: 0;
     }
-
     .skill{
         display: flex;
         flex-direction: column;
         align-items: left;
         padding: 0.5rem;
         width: fit-content;
-    }
-    .icon-container{
-        -width: fit-content;
+        margin-left: 2.1rem;
     }
     .icon-container i{
         width: fit-content;
         font-size: 3rem;
         margin: 1.5rem;
     }
-/*     .my-skills{
-        margin-top: 10rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-gap: 2.5rem;
-        text-align: center;
-    }
-    .skill{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-    } */
     .skill h1{
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -612,10 +612,7 @@ li{
         order: -1;
     }
     .container{
-        -width: fit-content;
         margin: 0rem;
-        -max-width: none;
-        -position: inherit;
     }
     .timeline ul{
         width: 48%;
@@ -631,16 +628,12 @@ li{
     .timeline .date::before{
         font-size: 0.9rem;
     }
-    .up{
-        -right: 12rem;
-    }
     .contacts{
         width: fit-content;
         font-size: 1.5rem;
         margin-bottom: 2rem;
     }
     .copyright{
-        width: inherit;
-        padding: 0; 
+        width: 100%;
     }
 }
